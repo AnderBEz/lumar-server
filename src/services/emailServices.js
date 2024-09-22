@@ -1,5 +1,4 @@
 import transporter from "../controller/mailer.js";
-import { appointmentTemplate } from "../utils/emailTemplate.js";
 
 export const sendAppointmentEmail = async (nombre, numeroCel, fecha, hora) => {
   await transporter.sendMail({
