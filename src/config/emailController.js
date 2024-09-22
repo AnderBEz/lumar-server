@@ -15,4 +15,5 @@ export const sendEmail = async (req, res) => {
   } catch (error) {
     res.status(500).send('Error al enviar el correo');
   }
+  
 };
