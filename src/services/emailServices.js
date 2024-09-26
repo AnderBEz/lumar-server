@@ -6,13 +6,12 @@ export const sendAppointmentEmail = async (nombre, numeroCel, fecha, hora) => {
     to: process.env.USER_LUMAR,
     subject: "Confirmación de Cita",
     html: `
-    <h1>Confirmación de una cita</h1>
-    <p><b>${nombre}<b> ha hecho una cita</p>
-    <p>Informacion del cliente<p>
-    <p>Nombre: ${nombre} <p>
-    <p>Numero de celular: ${numeroCel} <p>
-    <p>Fecha reservada: ${fecha} <p>
-    <p>Hora reservada: ${hora} <p>
+    <h1><b>${nombre} ha agendado una cita</b></h1>
+    <h2>Informacion del cliente</h2>
+    <h3>Nombre: ${nombre} </h3>
+    <h3>Numero de celular: ${numeroCel} </h3>
+    <h3>Fecha reservada: ${fecha} </h3>
+    <h3>Hora reservada: ${hora} </h3>
     `
   });
 };
